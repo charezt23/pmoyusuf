@@ -1,6 +1,8 @@
-import 'package:apiapiapi/PemetaanSuara/model/modelProvinsi.dart';
+import 'package:apiapiapi/PemetaanSuara/model/ListModel.dart';
 import 'package:apiapiapi/PemetaanSuara/servicesura.dart';
 import 'package:flutter/material.dart';
+
+import 'model/modelProvinsi.dart';
 
 void main() {
   runApp(MyApp());
@@ -25,7 +27,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  List<ModelProvinsi> provinsiList = [];
   bool isLoading = false;
   PemetaanSuaraService service = PemetaanSuaraService();
 
